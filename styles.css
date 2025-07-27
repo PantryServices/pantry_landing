@@ -43,7 +43,7 @@
     /* Border Radius */
     --radius-sm: 8px;
     --radius-md: 12px;
-    --radius-lg: 16px;
+    --radius-lg: 50px;
     --radius-xl: 24px;
     
     /* Shadows */
@@ -136,18 +136,17 @@ h3 {
 }
 
 .cta-button {
-    
     color: var(--cream);
     padding: var(--spacing-xs) var(--spacing-md);
     border-radius: var(--radius-lg);
-    border-color: var(--primary);
+    border: 2px solid var(--primary);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background: var(--secondary);
+    background: var(--cream);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -250,6 +249,7 @@ h3 {
     box-shadow: var(--shadow-lg);
     margin: 0 auto;
 }
+
 
 .phone-screen {
     width: 100%;
@@ -389,8 +389,7 @@ h3 {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     gap: var(--spacing-2xl);
     align-items: center;
 }
